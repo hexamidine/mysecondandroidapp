@@ -30,10 +30,6 @@ object ServiceModule {
     @Provides
     @Singleton
     fun contentResolverHelper(@ApplicationContext context: Context) = ContentResolverHelper(context)
-//    fun appDatabase(@ApplicationContext context: Context) = Room.databaseBuilder(
-//        context,
-//        AppDatabase::class.java, "myfirstdb"
-//    ).build()
 
     @Singleton
     @Provides
@@ -56,5 +52,4 @@ object ServiceModule {
             .okHttpClient(httpClient)
             .build()
     }
-//    fun dao(db: AppDatabase) = db.gitHubRepositoryDao()
 }

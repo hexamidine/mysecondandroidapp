@@ -5,5 +5,4 @@ data class Repository(
     val name: String,
     val url: String,
     val owner: RepositoryOwner,
-    //var isInFavorites: Boolean,
 )
