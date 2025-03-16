@@ -1,0 +1,15 @@
+query Repos($ids: [ID!]!) {
+  nodes(ids: $ids) {
+    ... on Repository {
+      databaseId
+      nameWithOwner
+      createdAt
+      owner {
+        avatarUrl
+        login
+      }
+      name
+      url
+    }
+  }
+}
